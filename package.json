@@ -1,0 +1,15 @@
+{
+  "name": "hartford-exercise",
+  "version": "1.0.0",
+  "description": "Mini project for Hartford application",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./styles/main.scss:./build/main.css"
+  },
+  "author": "Anthony Chapman",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
