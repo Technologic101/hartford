@@ -15,13 +15,18 @@
       </header>
       <div class="card-form__body">
         <form>
-          <label for="vehicle-type">Vehicle Type</label>
-          <select name="vehicle-type">
-            <option value="coupe">Coupe</option>
-            <option value="minivan">Minivan</option>
-            <option value="sedan">Sedan</option>
-            <option value="suv">SUV</option>
-          </select>
+          <label for="vehicle-type" class="card-form__label">
+            Vehicle Type
+          </label>
+          <div class="card-form__select-wrapper">
+            <select name="vehicle-type" class="card-form__select">
+              <option value="">- Select -</option>
+              <option value="coupe">Coupe</option>
+              <option value="minivan">Minivan</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+            </select>
+          </div>
         </form>
       </div>
       <footer class="card-form__footer">

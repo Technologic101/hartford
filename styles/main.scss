@@ -1,2 +1,3 @@
-@use 'global.scss';
-@use 'card-form.scss';
+@import '../node_modules/normalize-scss/sass/normalize/import-now';
+@import 'global';
+@import 'card-form';

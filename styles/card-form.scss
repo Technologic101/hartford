@@ -4,12 +4,73 @@
   border: 1px solid colors.$grey-400;
   border-radius: 5px;
   overflow: hidden;
+  width: 25rem;
 
+  // Layout
   &__header {
     background-color: colors.$grey-200;
     padding: 0 1rem;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.8;
+  }
+
+  &__body {
+    padding: 1rem 1rem 0;
+  }
+
+  &__footer {
+    padding: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  // Elements
+  &__title {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__label {
+    display: block;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &__btn {
+    min-width: 120px;
+    text-transform: uppercase;
+    padding: .6rem 1rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 .5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:focus {
+      outline: 1px solid colors.$grey-400;
+      outline-offset: 2px;
+    }
+
+    &--primary {
+      background-color: colors.$primary; 
+      color: white;
+    }
+
+    &--secondary {
+      background-color: transparent;
+      color: colors.$primary;
+      transition: background-color 1s;
+
+      &:active, &:hover, &:focus {
+        background-color: colors.$primary-light;
+        transition: background-color 1s;
+      }
+    }
   }
 }
  
