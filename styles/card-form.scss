@@ -1,0 +1,15 @@
+@use 'colors.scss';
+
+.card-form {
+  border: 1px solid colors.$grey-400;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__header {
+    background-color: colors.$grey-200;
+    padding: 0 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+}
+ 

@@ -1,8 +1,7 @@
-@use 'variables.scss';
-
-.card-form {
-  width: 100px;
-  height: 100px;
-  background-color: variables.$primary;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
- 

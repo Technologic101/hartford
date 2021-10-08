@@ -5,15 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hartford Coding Exercise</title>
-  <link rel="stylesheet" src="./build/main.css" />
+  <link rel="stylesheet" href="./build/main.css" />
 </head>
 <body>
   <main>
-    <div class="card-form">
+    <section class="card-form">
       <header class="card-form__header">
         <h3 class="card-form__title">Your Vehicle</h3>
       </header>
-    </div>
+      <div class="card-form__body">
+        <form>
+          <label for="vehicle-type">Vehicle Type</label>
+          <select name="vehicle-type">
+            <option value="coupe">Coupe</option>
+            <option value="minivan">Minivan</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+          </select>
+        </form>
+      </div>
+      <footer class="card-form__footer">
+        <div class="card-form__btn-group">
+          <button class="card-form__btn card-form__btn--secondary">Cancel</button>
+          <button class="card-form__btn card-form__btn--primary">Save</button>
+        </div>
+      </footer>
+    </section>
   </main>
 </body>
 </html>
