@@ -3,7 +3,6 @@
 .card-form {
   border: 1px solid colors.$grey-400;
   border-radius: 5px;
-  overflow: hidden;
   width: 25rem;
 
   // Layout
@@ -12,6 +11,8 @@
     padding: 0 1rem;
     font-weight: bold;
     line-height: 1.8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
   &__body {
@@ -37,6 +38,10 @@
     margin-bottom: .3em;
   }
 
+  &__select-wrapper {
+    position: relative;
+  }
+
   &__select {
     -webkit-appearance: none;
     appearance: none;
@@ -45,6 +50,7 @@
     border: 1px solid colors.$grey-400;
     border-radius: 5px;
     width: 250px;
+    display: block;
 
     &:hover, &:focus, &:active, &:focus-visible {
       border: 1px solid colors.$primary;
@@ -82,6 +88,37 @@
       &:active, &:hover, &:focus {
         background-color: colors.$primary-light;
         transition: background-color .3s;
+      }
+    }
+  }
+
+  //Pseudo-select
+  .pseudo-select {
+    &__menu {
+      display: none;
+      list-style-type: none;
+      border: 1px solid colors.$grey-400;
+      border-radius: 5px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+
+      li {
+        padding: .3em 1em;
+        cursor: pointer;
+
+        &:hover {
+          background-color: colors.$primary-light;
+        }
+      }
+    }
+
+    &__control {
+      &:checked + .pseudo-select__menu {
+        display: block;
       }
     }
   }
